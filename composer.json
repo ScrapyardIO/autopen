@@ -1,0 +1,52 @@
+{
+    "name": "scrapyard-io/autopen",
+    "description": "The ScrapyardIO Extended Fonts package.",
+    "license": "MIT",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com",
+    "version": "0.6.0",
+    "support": {
+        "issues": "https://github.com/scrapyard-io/framework/issues",
+        "source": "https://github.com/scrapyard-io/framework"
+    },
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "fabricate/fonts": "^0.6.0",
+        "fabricate/rendering": "^0.6.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ScrapyardIO\\Fonts\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "scrapyard-io": {
+            "providers": [
+                "ScrapyardIO\\Fonts\\AutopenServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "0.6.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev"
+}
