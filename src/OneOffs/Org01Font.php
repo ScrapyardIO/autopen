@@ -2,14 +2,14 @@
 
 namespace ScrapyardIO\Fonts\OneOffs;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 
 class Org01Font extends GFXFont
 {
     protected int $first = 0x20;   // First char: space
     protected int $last = 0x7E;    // Last char: ~
-    protected int $yAdvance = 6;  // Line height (9pt + spacing)
+    protected int $yAdvance = 7;  // Adafruit Org_01 GFXfont yAdvance
 
     protected array $bitmaps = [
         0xE8, 0xA0, 0x57, 0xD5, 0xF5, 0x00, 0xFD, 0x3E, 0x5F, 0x80, 0x88, 0x88,

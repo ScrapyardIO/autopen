@@ -1,6 +1,6 @@
 <?php
 
-namespace DeptOfScrapyardRobotics\Tests;
+namespace ScrapyardIO\Fonts\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

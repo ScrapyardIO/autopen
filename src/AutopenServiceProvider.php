@@ -2,36 +2,34 @@
 
 namespace ScrapyardIO\Fonts;
 
-use Fabricate\Core\Machine as ScrapyardIOMachine;
-use Fabricate\NutsAndBolts\MagicAliases\Font;
 use Fabricate\NutsAndBolts\ServiceProvider;
+use ScrapyardIO\Tubes\Core\MagicAliases\Font;
 
 class AutopenServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->publishConfig();
+        $source = realpath($raw = __DIR__.'/../config/fonts.php') ?: $raw;
+
+        $this->mergeConfigFrom($source, 'autopen-fonts');
     }
 
     public function boot(): void
     {
-        $this->registerEnabledFonts();
-    }
+        if ($this->container->runningInConsole()) {
+            $source = realpath($raw = __DIR__.'/../config/fonts.php') ?: $raw;
 
-    protected function publishConfig(): void
-    {
-        $source = realpath($raw = __DIR__.'/../config/fonts.php') ?: $raw;
-
-        if ($this->program instanceof ScrapyardIOMachine && $this->program->runningInConsole()) {
-            $this->publishes([$source => $this->program->configPath('fonts.php')]);
+            $this->publishes([
+                $source => $this->container->configPath('autopen-fonts.php'),
+            ], 'autopen-fonts-config');
         }
 
-        $this->mergeConfigFrom($source, 'fonts');
+        $this->registerEnabledFonts();
     }
 
     protected function registerEnabledFonts(): void
     {
-        $fonts = config('fonts', []);
+        $fonts = config('autopen-fonts', []);
 
         if (! is_array($fonts) || $fonts === []) {
             return;
@@ -52,7 +50,7 @@ class AutopenServiceProvider extends ServiceProvider
                 continue;
             }
 
-            Font::addFont($name, $class);
+            Font::extend($name, $class);
         }
     }
 }

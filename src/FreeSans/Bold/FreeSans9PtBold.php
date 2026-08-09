@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\FreeSans\Bold;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeSans9PtBold extends GFXFont
 {

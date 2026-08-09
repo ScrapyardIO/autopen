@@ -1,6 +1,6 @@
 <?php
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 /**
  * Every font class shipped by this package, discovered from the src tree so
@@ -38,7 +38,8 @@ function fontLibraryClasses(): array
 }
 
 test('the full GFXFonts 0.2.0 library made the trip', function () {
-    expect(fontLibraryClasses())->toHaveCount(38);
+    // Base library + Free* 12/18/24 expansions + HelvB08/10/12/14 + Logisoso16
+    expect(fontLibraryClasses())->toHaveCount(58);
 });
 
 test('every font autoloads, extends the agnostic GFXFont base and carries a sane range', function () {

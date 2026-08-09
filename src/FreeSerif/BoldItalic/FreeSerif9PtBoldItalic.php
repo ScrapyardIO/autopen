@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\FreeSerif\BoldItalic;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeSerif9PtBoldItalic extends GFXFont
 {

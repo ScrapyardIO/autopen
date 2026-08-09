@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\OneOffs;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class TomThumbFont extends GFXFont
 {

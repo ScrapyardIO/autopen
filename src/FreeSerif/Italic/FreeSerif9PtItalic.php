@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\FreeSerif\Italic;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeSerif9PtItalic extends GFXFont
 {

@@ -3,7 +3,7 @@
 namespace ScrapyardIO\Fonts\FreeMono;
 
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeMono12Pt extends GFXFont
 {

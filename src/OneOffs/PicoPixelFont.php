@@ -2,13 +2,13 @@
 
 namespace ScrapyardIO\Fonts\OneOffs;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class PicoPixelFont extends GFXFont
 {
     protected int $first = 0x20;   // First char: space
     protected int $last = 0x7E;    // Last char: ~
-    protected int $yAdvance = 6;  // Line height (9pt + spacing)
+    protected int $yAdvance = 7;  // Adafruit Picopixel GFXfont yAdvance
 
     protected array $bitmaps = [
         0xE8, 0xB4, 0x57, 0xD5, 0xF5, 0x00, 0x4E, 0x3E, 0x80, 0xA5, 0x4A, 0x4A,

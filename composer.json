@@ -2,11 +2,11 @@
     "name": "scrapyard-io/autopen",
     "description": "The ScrapyardIO Extended Fonts package.",
     "license": "MIT",
-    "homepage": "https://scrapyard-io.projectsaturnstudios.com",
-    "version": "0.6.0",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/scrapyard-io/autopen/0.7.x",
+    "version": "0.7.0",
     "support": {
-        "issues": "https://github.com/scrapyard-io/framework/issues",
-        "source": "https://github.com/scrapyard-io/framework"
+        "issues": "https://github.com/scrapyard-io/autopen/issues",
+        "source": "https://github.com/scrapyard-io/autopen"
     },
     "authors": [
         {
@@ -15,9 +15,8 @@
         }
     ],
     "require": {
-        "php": "^8.3",
-        "fabricate/fonts": "^0.6.0",
-        "fabricate/rendering": "^0.6.0"
+        "php": "^8.4|^8.5|^8.6",
+        "scrapyard-io/tubes": "^0.7.0"
     },
     "require-dev": {
         "pestphp/pest": "^4"
@@ -29,7 +28,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+            "ScrapyardIO\\Fonts\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -39,7 +38,7 @@
             ]
         },
         "branch-alias": {
-            "dev-master": "0.6.x-dev"
+            "dev-master": "0.7.x-dev"
         }
     },
     "config": {
@@ -48,5 +47,6 @@
             "pestphp/pest-plugin": true
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

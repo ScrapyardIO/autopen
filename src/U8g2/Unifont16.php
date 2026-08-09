@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\U8g2;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 /**
  * Unifont16 font

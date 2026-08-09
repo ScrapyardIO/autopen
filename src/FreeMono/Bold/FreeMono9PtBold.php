@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\FreeMono\Bold;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeMono9PtBold extends GFXFont
 {

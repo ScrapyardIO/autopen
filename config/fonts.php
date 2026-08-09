@@ -1,19 +1,34 @@
 <?php
 
+use ScrapyardIO\Fonts\FreeMono\Bold\FreeMono12PtBold;
 use ScrapyardIO\Fonts\FreeMono\Bold\FreeMono9PtBold;
+use ScrapyardIO\Fonts\FreeMono\BoldOblique\FreeMono12PtBoldOblique;
 use ScrapyardIO\Fonts\FreeMono\BoldOblique\FreeMono9PtBoldOblique;
 use ScrapyardIO\Fonts\FreeMono\FreeMono12Pt;
+use ScrapyardIO\Fonts\FreeMono\FreeMono18Pt;
+use ScrapyardIO\Fonts\FreeMono\FreeMono24Pt;
 use ScrapyardIO\Fonts\FreeMono\FreeMono9Pt;
+use ScrapyardIO\Fonts\FreeMono\Oblique\FreeMono12PtOblique;
 use ScrapyardIO\Fonts\FreeMono\Oblique\FreeMono9PtOblique;
+use ScrapyardIO\Fonts\FreeSans\Bold\FreeSans12PtBold;
 use ScrapyardIO\Fonts\FreeSans\Bold\FreeSans9PtBold;
+use ScrapyardIO\Fonts\FreeSans\BoldOblique\FreeSans12PtBoldOblique;
 use ScrapyardIO\Fonts\FreeSans\BoldOblique\FreeSans9PtBoldOblique;
 use ScrapyardIO\Fonts\FreeSans\FreeSans12Pt;
+use ScrapyardIO\Fonts\FreeSans\FreeSans18Pt;
+use ScrapyardIO\Fonts\FreeSans\FreeSans24Pt;
 use ScrapyardIO\Fonts\FreeSans\FreeSans9Pt;
+use ScrapyardIO\Fonts\FreeSans\Oblique\FreeSans12PtOblique;
 use ScrapyardIO\Fonts\FreeSans\Oblique\FreeSans9PtOblique;
+use ScrapyardIO\Fonts\FreeSerif\Bold\FreeSerif12PtBold;
 use ScrapyardIO\Fonts\FreeSerif\Bold\FreeSerif9PtBold;
+use ScrapyardIO\Fonts\FreeSerif\BoldItalic\FreeSerif12PtBoldItalic;
 use ScrapyardIO\Fonts\FreeSerif\BoldItalic\FreeSerif9PtBoldItalic;
 use ScrapyardIO\Fonts\FreeSerif\FreeSerif12Pt;
+use ScrapyardIO\Fonts\FreeSerif\FreeSerif18Pt;
+use ScrapyardIO\Fonts\FreeSerif\FreeSerif24Pt;
 use ScrapyardIO\Fonts\FreeSerif\FreeSerif9Pt;
+use ScrapyardIO\Fonts\FreeSerif\Italic\FreeSerif12PtItalic;
 use ScrapyardIO\Fonts\FreeSerif\Italic\FreeSerif9PtItalic;
 use ScrapyardIO\Fonts\Montserrat\Montserrat12;
 use ScrapyardIO\Fonts\Montserrat\Montserrat14;
@@ -25,6 +40,11 @@ use ScrapyardIO\Fonts\OneOffs\Org01Font;
 use ScrapyardIO\Fonts\OneOffs\PicoPixelFont;
 use ScrapyardIO\Fonts\OneOffs\Tiny3x3A2PtFont;
 use ScrapyardIO\Fonts\OneOffs\TomThumbFont;
+use ScrapyardIO\Fonts\HelvB\HelvB08;
+use ScrapyardIO\Fonts\HelvB\HelvB10;
+use ScrapyardIO\Fonts\HelvB\HelvB12;
+use ScrapyardIO\Fonts\HelvB\HelvB14;
+use ScrapyardIO\Fonts\Logisoso\Logisoso16;
 use ScrapyardIO\Fonts\U8g2\Font5x8;
 use ScrapyardIO\Fonts\U8g2\Font6x10;
 use ScrapyardIO\Fonts\U8g2\Font6x12;
@@ -42,21 +62,36 @@ use ScrapyardIO\Fonts\Unscii\Unscii8;
 return [
     'free-sans-9pt' => ['class' => FreeSans9Pt::class, 'enabled' => true],
     'free-sans-12pt' => ['class' => FreeSans12Pt::class, 'enabled' => false],
+    'free-sans-18pt' => ['class' => FreeSans18Pt::class, 'enabled' => false],
+    'free-sans-24pt' => ['class' => FreeSans24Pt::class, 'enabled' => false],
     'free-sans-9pt-bold' => ['class' => FreeSans9PtBold::class, 'enabled' => false],
+    'free-sans-12pt-bold' => ['class' => FreeSans12PtBold::class, 'enabled' => false],
     'free-sans-9pt-oblique' => ['class' => FreeSans9PtOblique::class, 'enabled' => false],
+    'free-sans-12pt-oblique' => ['class' => FreeSans12PtOblique::class, 'enabled' => false],
     'free-sans-9pt-bold-oblique' => ['class' => FreeSans9PtBoldOblique::class, 'enabled' => false],
+    'free-sans-12pt-bold-oblique' => ['class' => FreeSans12PtBoldOblique::class, 'enabled' => false],
 
     'free-mono-9pt' => ['class' => FreeMono9Pt::class, 'enabled' => false],
     'free-mono-12pt' => ['class' => FreeMono12Pt::class, 'enabled' => false],
+    'free-mono-18pt' => ['class' => FreeMono18Pt::class, 'enabled' => false],
+    'free-mono-24pt' => ['class' => FreeMono24Pt::class, 'enabled' => false],
     'free-mono-9pt-bold' => ['class' => FreeMono9PtBold::class, 'enabled' => false],
+    'free-mono-12pt-bold' => ['class' => FreeMono12PtBold::class, 'enabled' => false],
     'free-mono-9pt-oblique' => ['class' => FreeMono9PtOblique::class, 'enabled' => false],
+    'free-mono-12pt-oblique' => ['class' => FreeMono12PtOblique::class, 'enabled' => false],
     'free-mono-9pt-bold-oblique' => ['class' => FreeMono9PtBoldOblique::class, 'enabled' => false],
+    'free-mono-12pt-bold-oblique' => ['class' => FreeMono12PtBoldOblique::class, 'enabled' => false],
 
     'free-serif-9pt' => ['class' => FreeSerif9Pt::class, 'enabled' => false],
     'free-serif-12pt' => ['class' => FreeSerif12Pt::class, 'enabled' => false],
+    'free-serif-18pt' => ['class' => FreeSerif18Pt::class, 'enabled' => false],
+    'free-serif-24pt' => ['class' => FreeSerif24Pt::class, 'enabled' => false],
     'free-serif-9pt-bold' => ['class' => FreeSerif9PtBold::class, 'enabled' => false],
+    'free-serif-12pt-bold' => ['class' => FreeSerif12PtBold::class, 'enabled' => false],
     'free-serif-9pt-italic' => ['class' => FreeSerif9PtItalic::class, 'enabled' => false],
+    'free-serif-12pt-italic' => ['class' => FreeSerif12PtItalic::class, 'enabled' => false],
     'free-serif-9pt-bold-italic' => ['class' => FreeSerif9PtBoldItalic::class, 'enabled' => false],
+    'free-serif-12pt-bold-italic' => ['class' => FreeSerif12PtBoldItalic::class, 'enabled' => false],
 
     'montserrat-12' => ['class' => Montserrat12::class, 'enabled' => false],
     'montserrat-14' => ['class' => Montserrat14::class, 'enabled' => false],
@@ -84,4 +119,10 @@ return [
     'u8g2-spleen-5x8' => ['class' => Spleen5x8::class, 'enabled' => false],
     'u8g2-spleen-6x12' => ['class' => Spleen6x12::class, 'enabled' => false],
     'u8g2-unifont-16' => ['class' => Unifont16::class, 'enabled' => false],
+
+    'helvb-08' => ['class' => HelvB08::class, 'enabled' => false],
+    'helvb-10' => ['class' => HelvB10::class, 'enabled' => false],
+    'helvb-12' => ['class' => HelvB12::class, 'enabled' => true],
+    'helvb-14' => ['class' => HelvB14::class, 'enabled' => false],
+    'logisoso-16' => ['class' => Logisoso16::class, 'enabled' => true],
 ];

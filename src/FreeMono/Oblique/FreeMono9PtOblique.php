@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\FreeMono\Oblique;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 class FreeMono9PtOblique extends GFXFont
 {

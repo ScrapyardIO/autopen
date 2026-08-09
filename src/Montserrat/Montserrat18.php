@@ -2,7 +2,7 @@
 
 namespace ScrapyardIO\Fonts\Montserrat;
 
-use Fabricate\Rendering\Fonts\GFXFont;
+use ScrapyardIO\Tubes\Contracts\Fonts\GFXFont;
 
 /**
  * Montserrat18 font
